@@ -36,6 +36,7 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Core/Src/delay.c \
 Core/Src/led.c \
 Core/Src/main.c \
 Drivers/CMSIS/CM3/src/core_cm3.c \
@@ -122,7 +123,6 @@ C_INCLUDES =  \
 -ICore/Inc \
 -IDrivers/STM32F10x_StdPeriph_Driver/inc \
 -IDrivers/CMSIS/CM3/inc \
--IDrivers/SYSTEM/include
 
 
 # compile gcc flags
