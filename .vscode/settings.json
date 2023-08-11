@@ -12,6 +12,9 @@
         "stm32f10x.h": "c",
         "stm32f10x_gpio.h": "c",
         "stm32f10x_conf.h": "c",
-        "stm32f10x_rcc.h": "c"
+        "stm32f10x_rcc.h": "c",
+        "uart.h": "c",
+        "stm32f10x_usart.h": "c",
+        "stm32f10x_dma.h": "c"
     }
 }
