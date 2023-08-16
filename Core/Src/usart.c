@@ -4,10 +4,6 @@
 #include <stm32f10x_dma.h>
 #include "usart.h"
 
-static uint8_t  s_usart_rx_buf[USART_RECV_LEN];  /* 接收缓冲,最大USART_REC_LEN个字节.末字节为换行符 */
-static uint16_t s_usart_rx_sta;                 /* 接收状态标记 */
-
-
 /*
 int _read(int fd, char *ptr, int len)
 {
@@ -59,7 +55,7 @@ static void usart_config(uint32_t baudrate)
     USART_Init(USART_UX, &usart_init_struct);
 
     USART_ITConfig(USART_UX, USART_IT_TXE, DISABLE);
-    USART_ITConfig(USART_UX, USART_IT_RXNE, ENABLE);
+    USART_ITConfig(USART_UX, USART_IT_RXNE, DISABLE);
     USART_ITConfig(USART_UX, USART_IT_IDLE, DISABLE);
 }
 

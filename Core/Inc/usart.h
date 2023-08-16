@@ -18,9 +18,6 @@
 #define USART_UX_CLK_ENABLE()               RCC->APB2ENR |= 1 << 14  //IO端口USART1时钟使能
 
 
-#define USART_RECV_LEN               256         //定义最大接收字节数
-
-
 void usart_init(uint32_t baudrate);
 
 #endif // !USART_H_
