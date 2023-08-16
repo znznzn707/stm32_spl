@@ -77,13 +77,16 @@ extern uint32_t SystemCoreClock;
 // #define configKERNEL_INTERRUPT_PRIORITY         [dependent of processor]
 // #define configMAX_SYSCALL_INTERRUPT_PRIORITY    [dependent on processor and application]
 // #define configMAX_API_CALL_INTERRUPT_PRIORITY   [dependent on processor and application]
+
 /* 中断嵌套行为配置 */
+/*8bit stm32中断优先级配置寄存器只使用了高4位*/
 #ifdef __NVIC_PRIO_BITS
     #define configPRIO_BITS __NVIC_PRIO_BITS
 #else
     #define configPRIO_BITS 4
 #endif
 
+/*FreeRTOS管理的中断优先级范围是5-15。优先级0-4的中断不受FreeRTOS开关中断的影响*/
 #define configLIBRARY_LOWEST_INTERRUPT_PRIORITY         15                  /* 中断最低优先级 */
 #define configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY    5                   /* FreeRTOS可管理的最高中断优先级 */
 #define configKERNEL_INTERRUPT_PRIORITY                 ( configLIBRARY_LOWEST_INTERRUPT_PRIORITY << (8 - configPRIO_BITS) )
