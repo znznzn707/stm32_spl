@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stm32f1xx.h": "c",
+			"sys.h": "c",
+			"delay.h": "c",
+			"led.h": "c",
+			"stm32f103xe.h": "c",
+			"usart.h": "c",
+			"sys_config.h": "c",
+			"system_stm32f1xx.h": "c",
+			"stm32f1xx_hal.h": "c",
+			"stm32f10x.h": "c",
+			"stm32f10x_gpio.h": "c",
+			"stm32f10x_conf.h": "c",
+			"stm32f10x_rcc.h": "c",
+			"uart.h": "c",
+			"stm32f10x_usart.h": "c",
+			"stm32f10x_dma.h": "c",
+			"misc.h": "c",
+			"freertosconfig.h": "c",
+			"freertos.h": "c",
+			"stm32f10x_it.h": "c",
+			"portable.h": "c",
+			"projdefs.h": "c",
+			"task.h": "c"
+		}
+	}
+}

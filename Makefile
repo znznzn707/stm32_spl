@@ -64,6 +64,15 @@ Drivers/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c \
 Drivers/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c \
 Drivers/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c \
 Drivers/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c \
+Drivers/FreeRTOS/croutine.c \
+Drivers/FreeRTOS/event_groups.c \
+Drivers/FreeRTOS/list.c \
+Drivers/FreeRTOS/queue.c \
+Drivers/FreeRTOS/stream_buffer.c \
+Drivers/FreeRTOS/tasks.c \
+Drivers/FreeRTOS/timers.c \
+Drivers/FreeRTOS/portable/GCC/ARM_CM3/port.c \
+Drivers/FreeRTOS/portable/MemMang/heap_4.c \
 Core/Src/stm32f10x_it.c \
 Core/Src/system_stm32f10x.c  
 
@@ -123,6 +132,8 @@ AS_INCLUDES =
 C_INCLUDES =  \
 -ICore/Inc \
 -IDrivers/STM32F10x_StdPeriph_Driver/inc \
+-IDrivers/FreeRTOS/include \
+-IDrivers/FreeRTOS/portable/GCC/ARM_CM3 \
 -IDrivers/CMSIS/CM3/inc \
 
 
