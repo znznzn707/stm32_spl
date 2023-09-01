@@ -134,7 +134,7 @@ C_INCLUDES =  \
 -IDrivers/STM32F10x_StdPeriph_Driver/inc \
 -IDrivers/FreeRTOS/include \
 -IDrivers/FreeRTOS/portable/GCC/ARM_CM3 \
--IDrivers/CMSIS/CM3/inc \
+-IDrivers/CMSIS/CM3/inc 
 
 
 # compile gcc flags
