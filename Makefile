@@ -36,6 +36,7 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Core/Src/sdio_sdcard.c \
 Core/Src/usart.c \
 Core/Src/delay.c \
 Core/Src/led.c \
@@ -73,6 +74,9 @@ Drivers/FreeRTOS/tasks.c \
 Drivers/FreeRTOS/timers.c \
 Drivers/FreeRTOS/portable/GCC/ARM_CM3/port.c \
 Drivers/FreeRTOS/portable/MemMang/heap_4.c \
+Utilities/STM32_EVAL/Common/stm32_eval_sdio_sd.c \
+Utilities/STM32_EVAL/stm32_eval.c \
+Utilities/STM32_EVAL/STM3210E_EVAL/stm3210e_eval.c \
 Core/Src/stm32f10x_it.c \
 Core/Src/system_stm32f10x.c  
 
@@ -134,6 +138,9 @@ C_INCLUDES =  \
 -IDrivers/STM32F10x_StdPeriph_Driver/inc \
 -IDrivers/FreeRTOS/include \
 -IDrivers/FreeRTOS/portable/GCC/ARM_CM3 \
+-IUtilities/STM32_EVAL \
+-IUtilities/STM32_EVAL/Common \
+-IUtilities/STM32_EVAL/STM3210E_EVAL \
 -IDrivers/CMSIS/CM3/inc 
 
 

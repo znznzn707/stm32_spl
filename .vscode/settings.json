@@ -166,6 +166,11 @@
         "freertosconfig.h": "c",
         "freertos.h": "c",
         "stm32f10x_it.h": "c",
-        "portable.h": "c"
+        "portable.h": "c",
+        "sdio_sdcard.h": "c",
+        "stm32_eval_sdio_sd.h": "c",
+        "stm3210e_eval.h": "c",
+        "stm32_eval.h": "c",
+        "stm3210b_eval.h": "c"
     }
 }
